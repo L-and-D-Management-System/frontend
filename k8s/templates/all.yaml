@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend-cont
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"`n          resources:`n            requests:`n              cpu: "100m"`n              memory: "128Mi"
   strategy:
     blueGreen: 
       activeService: frontend-svc
